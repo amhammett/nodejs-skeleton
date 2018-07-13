@@ -1,4 +1,4 @@
-.PHONEY = help install deploy invoke terminate test json-lint eslint mocha
+.PHONEY = deploy eslint help install json-lint mocha run test watch yarn_packages
 
 # pathing
 ifeq ($(OS),Windows_NT)
