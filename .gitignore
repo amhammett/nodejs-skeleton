@@ -1,0 +1,21 @@
+# environmental
+.env
+.env.*
+!.env.example
+
+# package directories
+node_modules
+jspm_packages
+venv
+
+# application
+*.log
+
+# development
+*.save
+*.sublime-workspace
+*.swp
+*.swap
+
+# system
+.DS_Store
