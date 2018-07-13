@@ -1,0 +1,29 @@
+{
+  "scenarios": [
+    {
+      "title": "Sample test data",
+      "test_cases": [
+        {
+          "description": "Empty event data",
+          "invoke_data": {},
+          "expected_result": "key not found",
+          "evaluation": "failure"
+        }, {
+          "description": "Invalid event data",
+          "invoke_data": {
+            "Records": []
+          },
+          "expected_result": "key not found",
+          "evaluation": "failure"
+        }, {
+          "description": "Expected event data",
+          "invoke_data": {
+            "key": "foo"
+          },
+          "expected_result": "bar",
+          "evaluation": "success"
+        }
+      ]
+    }
+  ]
+}
